@@ -3,6 +3,7 @@
 namespace Ryu
 {
 	CBackGround::CBackGround()
+		: CGameObject()
 	{
 	}
 

@@ -7,6 +7,8 @@ namespace Ryu
 	class CSceneManager
 	{
 	public:
+		/*씬 생성*/
+		// 생성과 초기화를 한다.
 		template<typename T>
 		static CScene*		CreateScene(const std::wstring& _name)
 		{
@@ -19,6 +21,10 @@ namespace Ryu
 
 			return scene;
 		}
+		
+		/*씬 로드*/
+		// 로드하는 씬을 ActiveScene으로 설정.
+		// 기존 ActiveScene은 OnExite()처리
 		static CScene*		LoadScene(const std::wstring& _name);
 		static CScene*		Get_ActiveScene() { return m_pActiveScene; }
 

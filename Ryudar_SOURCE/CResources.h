@@ -6,6 +6,7 @@ namespace Ryu
 	class CResources
 	{
 	public:
+		/*리소스 검색*/
 		template <typename T>
 		static T* Find(const std::wstring& _key)
 		{
@@ -19,6 +20,7 @@ namespace Ryu
 			return dynamic_cast<T*>(iter->second);
 		}
 
+		/*리소스 로드*/
 		template <typename T>
 		static T* Load(const std::wstring& _key, const std::wstring& _path)
 		{

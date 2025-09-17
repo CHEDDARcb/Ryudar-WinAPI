@@ -5,6 +5,8 @@
 
 namespace Ryu
 {
+	/*각 씬의 리소스 로드*/
+	// 게임 씬을 로드하기 전에 각 씬의 리소스를 한번에 로드시킨다.
 	void LoadResources()
 	{
 	#pragma region PlayScene리소스
@@ -31,7 +33,5 @@ namespace Ryu
 		//배경
 		CResources::Load<graphics::CTexture>(L"Texture_Stage3_BG", L"../KatanaZ/Texture/Stage3bg.bmp");
 	#pragma endregion
-
-
 	}
 }

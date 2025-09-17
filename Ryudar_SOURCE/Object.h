@@ -9,6 +9,7 @@
 
 namespace Ryu::object
 {
+	/*오브젝트 생성 및 레이어에 추가*/
 	template <typename T>
 	static T* Instantiate(enums::ecLayerType _LayerType)
 	{
