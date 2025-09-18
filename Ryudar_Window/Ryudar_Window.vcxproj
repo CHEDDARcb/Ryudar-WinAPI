@@ -134,6 +134,7 @@
   <ItemGroup>
     <ClInclude Include="CBackGround.h" />
     <ClInclude Include="CPlayer.h" />
+    <ClInclude Include="CPlayerScript.h" />
     <ClInclude Include="CPlayScene.h" />
     <ClInclude Include="LoadScenes.h" />
     <ClInclude Include="LoadResources.h" />
@@ -145,6 +146,7 @@
   <ItemGroup>
     <ClCompile Include="CBackGround.cpp" />
     <ClCompile Include="CPlayer.cpp" />
+    <ClCompile Include="CPlayerScript.cpp" />
     <ClCompile Include="CPlayScene.cpp" />
     <ClCompile Include="Stage1.cpp" />
     <ClCompile Include="Stage2.cpp" />

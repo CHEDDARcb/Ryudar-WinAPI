@@ -21,6 +21,7 @@ namespace Ryu
 		//CSceneManager::LoadScene(L"Stage1");
 		//CSceneManager::LoadScene(L"Stage2");
 		//CSceneManager::LoadScene(L"Stage3");
-		CSceneManager::LoadScene(L"TitleMenu");
+		//CSceneManager::LoadScene(L"TitleMenu");
+		CSceneManager::LoadScene(L"PlayScene");
 	}
 }

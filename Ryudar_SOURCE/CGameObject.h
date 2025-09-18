@@ -25,13 +25,14 @@ namespace Ryu
 			T* pComp = new T;
 			pComp->Initialize();
 			pComp->Set_Owner(this);
-			m_Components.push_back(pComp);
+
+			m_Components[(UINT)pComp->Get_ComponentType()] = pComp;
 
 			return pComp;
 		}
 
 		template <typename T>
-		T* GetComponent()
+		T* Get_Component()
 		{
 			T* pComponent = nullptr;
 			for (CComponent* pComp : m_Components)

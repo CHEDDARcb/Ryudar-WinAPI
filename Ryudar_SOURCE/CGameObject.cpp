@@ -5,6 +5,8 @@ namespace Ryu
 {
 	CGameObject::CGameObject()
 	{
+		m_Components.resize((UINT)enums::ecComponentType::End);
+
 		Init_Transform();
 	}
 
@@ -17,6 +19,9 @@ namespace Ryu
 	{
 		for (CComponent* comp : m_Components)
 		{
+			if (comp == nullptr)
+				continue;
+
 			comp->Initialize();
 		}
 
@@ -26,6 +31,9 @@ namespace Ryu
 	{
 		for (CComponent* comp : m_Components)
 		{
+			if (comp == nullptr)
+				continue;
+
 			comp->Update();
 		}
 	}
@@ -34,6 +42,9 @@ namespace Ryu
 	{
 		for (CComponent* comp : m_Components)
 		{
+			if (comp == nullptr)
+				continue;
+
 			comp->LateUpdate();
 		}
 	}
@@ -42,6 +53,9 @@ namespace Ryu
 	{
 		for (CComponent* comp : m_Components)
 		{
+			if (comp == nullptr)
+				continue;
+
 			comp->Render(_hdc);
 		}
 	}

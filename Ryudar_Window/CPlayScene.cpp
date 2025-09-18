@@ -5,6 +5,7 @@
 #include "Object.h"
 #include "CTexture.h"
 #include "CResources.h"
+#include "CPlayerScript.h"
 
 /*씬전환 테스트*/
 #include "CInputManager.h"
@@ -35,8 +36,7 @@ namespace Ryu
 		graphics::CTexture* pTexture = CResources::Find<graphics::CTexture>(L"Texture_PlayScene_BG");
 		sr->Set_Texture(pTexture);
 
-		
-		//sr->Image_Load(L"../KatanaZ/CloudOcean.png");
+		m_pPlayer->AddComponent<CPlayerScript>();
 	#pragma endregion
 	}
 	
@@ -67,7 +67,7 @@ namespace Ryu
 	
 	void CPlayScene::OnExit()
 	{
-		CTransform* tr = m_pPlayer->GetComponent<CTransform>();
+		CTransform* tr = m_pPlayer->Get_Component<CTransform>();
 		tr->Set_Position(Vector2(0, 0));
 	}
 }

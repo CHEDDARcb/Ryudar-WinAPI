@@ -5,7 +5,7 @@
 namespace Ryu
 {
 	CSpriteRenderer::CSpriteRenderer()
-		: CComponent()
+		: CComponent(enums::ecComponentType::SpriteRenderer)
 		, m_pTexture(nullptr)
 		, m_Size(Vector2::One)
 	{
@@ -38,7 +38,7 @@ namespace Ryu
 			assert(false); // 텍스처 세팅 필요.
 		}
 		
-		CTransform* tr = Get_Owner()->GetComponent<CTransform>();
+		CTransform* tr = Get_Owner()->Get_Component<CTransform>();
 		Vector2 pos = tr->Get_Position();
 
 		if (m_pTexture->Get_TextureType() 

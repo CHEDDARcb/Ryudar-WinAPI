@@ -32,6 +32,7 @@
     <ClInclude Include="$(MSBuildThisFileDirectory)Object.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)rApplication.h" />
     <ClInclude Include="$(MSBuildThisFileDirectory)RyuMath.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)CScript.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="$(MSBuildThisFileDirectory)CComponent.cpp" />
@@ -49,5 +50,6 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)CTransform.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)rApplication.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)RyuMath.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)CScript.cpp" />
   </ItemGroup>
 </Project>

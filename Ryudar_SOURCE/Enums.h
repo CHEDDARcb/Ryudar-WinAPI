@@ -2,6 +2,14 @@
 
 namespace Ryu::enums
 {
+	enum class ecComponentType
+	{
+		Transform,
+		SpriteRenderer,
+		Script,
+		End
+	};
+
 	enum class ecLayerType
 	{
 		None,

@@ -29,7 +29,7 @@ namespace Ryu::object
 		CLayer* layer = activeScene->Get_Layer(_LayerType);
 		layer->Add_GameObject(gameObj);
 
-		CTransform* transform = gameObj->GetComponent<CTransform>();
+		CTransform* transform = gameObj->Get_Component<CTransform>();
 		transform->Set_Position(_position);
 
 		return gameObj;

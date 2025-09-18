@@ -2,7 +2,9 @@
 
 namespace Ryu
 {
-	CComponent::CComponent()
+	CComponent::CComponent(enums::ecComponentType _ComponentType)
+		: m_pOwner(nullptr)
+		, m_ComponentType(_ComponentType)
 	{
 	}
 
