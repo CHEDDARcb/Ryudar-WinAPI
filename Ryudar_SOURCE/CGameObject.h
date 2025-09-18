@@ -2,10 +2,11 @@
 
 #include "CommonInclude.h"
 #include "CComponent.h"
+#include "CEntity.h"
 
 namespace Ryu
 {
-	class CGameObject
+	class CGameObject : public CEntity
 	{
 	public:
 		CGameObject();

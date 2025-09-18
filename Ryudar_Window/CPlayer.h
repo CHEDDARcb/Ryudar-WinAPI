@@ -10,7 +10,6 @@ namespace Ryu
         ~CPlayer();
 
     public:
-    public:
         void Initialize() override;
         void Update() override;
         void LateUpdate() override;

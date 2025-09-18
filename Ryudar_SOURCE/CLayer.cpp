@@ -7,7 +7,7 @@ namespace Ryu
 		, m_GameObjects{}
 		, m_ecType(_layerType)
 	{
-
+		CEntity::Set_Name(L"Layer");
 	}
 
 	CLayer::~CLayer()

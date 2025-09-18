@@ -8,6 +8,7 @@ namespace Ryu
 	CPlayer::CPlayer()
 		: CGameObject()
 	{
+		CEntity::Set_Name(L"Player");
 	}
 
 	CPlayer::~CPlayer()

@@ -30,6 +30,7 @@ namespace Ryu
 		m_pPlayer = object::Instantiate<CPlayer>(
 			enums::ecLayerType::BackGround,
 			Vector2(100, 100));
+		m_pPlayer->Set_Name(L"Basic BackGraound");
 
 		CSpriteRenderer* sr = m_pPlayer->AddComponent<CSpriteRenderer>();
 		sr->Set_Name(L"SR");
