@@ -1,5 +1,5 @@
 ﻿// Editor_Window.cpp : 애플리케이션에 대한 진입점을 정의합니다.
-//Transfer git Account
+
 
 #include "framework.h"
 #include "Editor_Window.h"
